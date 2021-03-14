@@ -31,14 +31,3 @@ scoreboard.addEventListener('mouseout', function(){
     scoreboard.classList.add('remove_display');
    
 })
-
-
-
-
-// window.addEventListener('scroll', function(){
-//     console.log(window.scrollY);
-//     if(window.scrollY > 300){
-//         scoreboard.classList.remove('remove_display');
-//         scoreboard.classList.add('score');
-//     }
-// })
