@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: #FFD00A;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.center_bar{
+
+}
+.navbar{
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    
+}
+.navbar > ul{
+    background: #fff;
+    text-align: center;
+    width: 100px;
+    border-radius: 14px 0px 0px 14px;
+    box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.15);
+    padding: 15px 0px 15px 0px;
+    display: inline-block;
+}
+.navbar > ul > li{
+    list-style-type: none;
+    width: 80px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 10px 30px 10px;
+}
+.navbar > ul > li > a{
+    font-size: 30px;
+    color: #016EED;
+    transition: 0.2s;
+}
+.navbar > ul > .active a{
+    background-color: #016EED;
+    color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    animation: reveal 0.5s cubic-bezier(.5, 0, 0, 1);
+}
+@keyframes reveal{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* ScoreBoard display */
+.score{
+    background: #fff;
+    display: inline-block;
+    border-radius: 0px 14px 14px 0px;
+    box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.15);
+    position: absolute;
+    margin-top: 0px;
+    height: 100%;
+    transition: 2s; 
+    animation: insane 0.5s cubic-bezier(.5, 0, 0, 1);
+}
+@keyframes insane{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px)
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.score > .table{
+  
+}
+.score > .table > p{
+    padding: 15px;
+}
+.remove_display{
+    transition: 0.2s;
+    animation: remove cubic-bezier(.5, 0, 0, 1);
+    transform: translateX(-30px);
+    opacity: 0;
+    display: inline-block;
+    background: #fff;
+    border-radius: 0px 14px 14px 0px;
+    box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.15);
+    position: absolute;
+    margin-top: 0px;
+    height: 100%;
+}
